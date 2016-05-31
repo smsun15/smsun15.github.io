@@ -1,9 +1,0 @@
-geo<-read.csv("wdi2013.csv",header = T)
-geo1 <- gvisGeoChart(geo, 
-                     locationvar = "geo$Country.Name", 
-                     sizevar ="Income",
-                     colorvar = "lifeExp",
-                     options = list(displayMode = "markers",
-                                    width = 500, height = 600,
-                                    gvis.editor = "other charts"))
-plot(geo1)
