@@ -2,7 +2,7 @@
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<title>PieChartID60464f11ea</title>
+<title>MergedID128c2be51158</title>
 <meta http-equiv="content-type" content="text/html;charset=utf-8" />
 <style type="text/css">
 body {
@@ -17,73 +17,149 @@ body {
 </style>
 </head>
 <body>
- <!-- PieChart generated in R 3.2.3 by googleVis 0.5.10 package -->
-<!-- Tue May 31 16:04:10 2016 -->
+ <!-- PieChart generated in R 3.2.4 by googleVis 0.5.10 package -->
+<!-- Thu Jun 02 21:22:36 2016 -->
 
 
 <!-- jsHeader -->
 <script type="text/javascript">
  
 // jsData 
-function gvisDataPieChartID60464f11ea () {
+function gvisDataPieChartID128c66847e2a () {
 var data = new google.visualization.DataTable();
 var datajson =
 [
  [
  "Afghanistan",
-70.66136 
+70.66135885 
 ],
 [
  "Angola",
-61.8733 
+61.87329711 
 ],
 [
  "Albania",
-116.15721 
+116.1572081 
 ],
 [
- "Albania",
-171.8738 
+ "United Arab Emirates",
+171.8737993 
+],
+[
+ "Argentina",
+162.5274217 
 ] 
 ];
-data.addColumn('string','country');
-data.addColumn('number','Mobile');
+data.addColumn('string','pie.Country.Name.1.5.');
+data.addColumn('number','pie.Mobile.1.5.');
+data.addRows(datajson);
+return(data);
+}
+
+
+// jsData 
+function gvisDataScatterChartID128c7ce36289 () {
+var data = new google.visualization.DataTable();
+var datajson =
+[
+ [
+ 637.0379443,
+70.66135885 
+],
+[
+ 3675.787412,
+61.87329711 
+],
+[
+ 3738.689799,
+116.1572081 
+],
+[
+ 32507.0721,
+171.8737993 
+],
+[
+ 12463.29847,
+162.5274217 
+] 
+];
+data.addColumn('number','data.Income.1.5.');
+data.addColumn('number','data.Mobile.1.5.');
 data.addRows(datajson);
 return(data);
 }
  
 // jsDrawChart
-function drawChartPieChartID60464f11ea() {
-var data = gvisDataPieChartID60464f11ea();
+function drawChartPieChartID128c66847e2a() {
+var data = gvisDataPieChartID128c66847e2a();
 var options = {};
 options["allowHtml"] = true;
+options["title"] = "������ ������ �̿��� ��";
 options["pieSliceText"] = "label";
-options["title"] = "pie chart";
 options["pieHole"] =   0.35;
 options["pieStartAngle"] =    100;
 options["width"] =    600;
 options["height"] =    700;
 
 
-    chartPieChartID60464f11ea = new google.visualization.ChartWrapper({
+    chartPieChartID128c66847e2a = new google.visualization.ChartWrapper({
     dataTable: data,       
     chartType: 'PieChart',
-    containerId: 'PieChartID60464f11ea',
+    containerId: 'PieChartID128c66847e2a',
     options: options
     });
-    chartPieChartID60464f11ea.draw();
+    chartPieChartID128c66847e2a.draw();
     
 
 }
 
-  function openEditorPieChartID60464f11ea() {
+  function openEditorPieChartID128c66847e2a() {
   var editor = new google.visualization.ChartEditor();
   google.visualization.events.addListener(editor, 'ok',
   function() { 
-  chartPieChartID60464f11ea = editor.getChartWrapper();  
-  chartPieChartID60464f11ea.draw(document.getElementById('PieChartID60464f11ea')); 
+  chartPieChartID128c66847e2a = editor.getChartWrapper();  
+  chartPieChartID128c66847e2a.draw(document.getElementById('PieChartID128c66847e2a')); 
   }); 
-  editor.openDialog(chartPieChartID60464f11ea);
+  editor.openDialog(chartPieChartID128c66847e2a);
+  }
+    
+
+
+// jsDrawChart
+function drawChartScatterChartID128c7ce36289() {
+var data = gvisDataScatterChartID128c7ce36289();
+var options = {};
+options["allowHtml"] = true;
+options["title"] = "Correlation between Mobile and Income";
+options["legend"] = "none";
+options["pointSize"] =      8;
+options["pointShape"] = "square";
+options["pointColors"] = "red";
+options["vAxis"] = {title:'Income'};
+options["hAxis"] = {title:'Mobile'};
+options["width"] =    600;
+options["height"] =    700;
+
+
+    chartScatterChartID128c7ce36289 = new google.visualization.ChartWrapper({
+    dataTable: data,       
+    chartType: 'ScatterChart',
+    containerId: 'ScatterChartID128c7ce36289',
+    options: options
+    });
+    chartScatterChartID128c7ce36289.draw();
+    
+
+}
+
+  function openEditorScatterChartID128c7ce36289() {
+  var editor = new google.visualization.ChartEditor();
+  google.visualization.events.addListener(editor, 'ok',
+  function() { 
+  chartScatterChartID128c7ce36289 = editor.getChartWrapper();  
+  chartScatterChartID128c7ce36289.draw(document.getElementById('ScatterChartID128c7ce36289')); 
+  }); 
+  editor.openDialog(chartScatterChartID128c7ce36289);
   }
     
  
@@ -103,9 +179,48 @@ if (newPackage)
   pkgs.push(chartid);
   
 // Add the drawChart function to the global list of callbacks
-callbacks.push(drawChartPieChartID60464f11ea);
+callbacks.push(drawChartPieChartID128c66847e2a);
 })();
-function displayChartPieChartID60464f11ea() {
+function displayChartPieChartID128c66847e2a() {
+  var pkgs = window.__gvisPackages = window.__gvisPackages || [];
+  var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
+  window.clearTimeout(window.__gvisLoad);
+  // The timeout is set to 100 because otherwise the container div we are
+  // targeting might not be part of the document yet
+  window.__gvisLoad = setTimeout(function() {
+  var pkgCount = pkgs.length;
+  google.load("visualization", "1", { packages:pkgs, callback: function() {
+  if (pkgCount != pkgs.length) {
+  // Race condition where another setTimeout call snuck in after us; if
+  // that call added a package, we must not shift its callback
+  return;
+}
+while (callbacks.length > 0)
+callbacks.shift()();
+} });
+}, 100);
+}
+
+
+// jsDisplayChart
+(function() {
+var pkgs = window.__gvisPackages = window.__gvisPackages || [];
+var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
+var chartid = "charteditor";
+  
+// Manually see if chartid is in pkgs (not all browsers support Array.indexOf)
+var i, newPackage = true;
+for (i = 0; newPackage && i < pkgs.length; i++) {
+if (pkgs[i] === chartid)
+newPackage = false;
+}
+if (newPackage)
+  pkgs.push(chartid);
+  
+// Add the drawChart function to the global list of callbacks
+callbacks.push(drawChartScatterChartID128c7ce36289);
+})();
+function displayChartScatterChartID128c7ce36289() {
   var pkgs = window.__gvisPackages = window.__gvisPackages || [];
   var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
   window.clearTimeout(window.__gvisLoad);
@@ -129,18 +244,44 @@ callbacks.shift()();
 </script>
  
 <!-- jsChart -->  
-<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartPieChartID60464f11ea"></script>
+<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartPieChartID128c66847e2a"></script>
+
+
+<!-- jsChart -->  
+<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartScatterChartID128c7ce36289"></script>
  
+<table cellspacing='20' bgcolor='#000000'>
+<tr>
+<td>
+
 <!-- divChart -->
-<input type='button' onclick='openEditorPieChartID60464f11ea()' value='other charts'/>  
-<div id="PieChartID60464f11ea" 
+<input type='button' onclick='openEditorPieChartID128c66847e2a()' value='other charts'/>  
+<div id="PieChartID128c66847e2a" 
   style="width: 600; height: 700;">
 </div>
- <div><span>Data: pie.df &#8226; Chart ID: <a href="Chart_PieChartID60464f11ea.html">PieChartID60464f11ea</a> &#8226; <a href="https://github.com/mages/googleVis">googleVis-0.5.10</a></span><br /> 
+
+</td>
+<td>
+
+<!-- divChart -->
+<input type='button' onclick='openEditorScatterChartID128c7ce36289()' value='other charts'/>  
+<div id="ScatterChartID128c7ce36289" 
+  style="width: 600; height: 700;">
+</div>
+
+</td>
+</tr>
+</table>
+ <div><span>Data: various &#8226; Chart ID: <a href="Chart_MergedID128c2be51158.html">MergedID128c2be51158</a> &#8226; <a href="https://github.com/mages/googleVis">googleVis-0.5.10</a></span><br /> 
 <!-- htmlFooter -->
 <span> 
-  R version 3.2.3 (2015-12-10) 
-  &#8226; <a href="https://developers.google.com/terms/">Google Terms of Use</a> &#8226; <a href="https://google-developers.appspot.com/chart/interactive/docs/gallery/piechart">Documentation and Data Policy</a>
+  R version 3.2.4 (2016-03-10) 
+  &#8226; <a href="https://developers.google.com/terms/">Google Terms of Use</a> &#8226; Data Policy: See individual charts
 </span></div>
+<div>
+  <p>왼쪽 차트는 국가별 모바일 이용자의 수를 pie모양으로 나타냈고,</p>
+  <p>오른쪽 차트는 x축이 수익이고, y축은 모바일 이용자의 수를 나타내고 있다. 
+  대체적으로 수익이 높을수록 모바일 이용자의 수가 높아진다.</p>
+</div>
 </body>
 </html>
