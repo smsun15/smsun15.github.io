@@ -2,7 +2,7 @@
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<title>BubbleChartID151448ee767e</title>
+<title>BubbleChartID221063345146</title>
 <meta http-equiv="content-type" content="text/html;charset=euc-kr" />
 <style type="text/css">
 body {
@@ -18,14 +18,14 @@ body {
 </head>
 <body>
  <!-- BubbleChart generated in R 3.2.4 by googleVis 0.5.10 package -->
-<!-- Thu Jun 02 13:44:21 2016 -->
+<!-- Mon Jun 06 23:39:45 2016 -->
 
 
 <!-- jsHeader -->
 <script type="text/javascript">
  
 // jsData 
-function gvisDataBubbleChartID151448ee767e () {
+function gvisDataBubbleChartID221063345146 () {
 var data = new google.visualization.DataTable();
 var datajson =
 [
@@ -1188,35 +1188,35 @@ return(data);
 }
  
 // jsDrawChart
-function drawChartBubbleChartID151448ee767e() {
-var data = gvisDataBubbleChartID151448ee767e();
+function drawChartBubbleChartID221063345146() {
+var data = gvisDataBubbleChartID221063345146();
 var options = {};
-options["title"] = "나라별 수익과 기대수명의 상관성";
+options["title"] = "국가별 수익과 기대수명의 상관성";
 options["hAxis"] = {title:"수익", minValue:180.0000, maxValue:80000.0000};
 options["vAxis"] = {title:"기대수명", minValue:50.00000, maxValue:90.00000};
 options["width"] =    600;
 options["height"] =    900;
 
 
-    chartBubbleChartID151448ee767e = new google.visualization.ChartWrapper({
+    chartBubbleChartID221063345146 = new google.visualization.ChartWrapper({
     dataTable: data,       
     chartType: 'BubbleChart',
-    containerId: 'BubbleChartID151448ee767e',
+    containerId: 'BubbleChartID221063345146',
     options: options
     });
-    chartBubbleChartID151448ee767e.draw();
+    chartBubbleChartID221063345146.draw();
     
 
 }
 
-  function openEditorBubbleChartID151448ee767e() {
+  function openEditorBubbleChartID221063345146() {
   var editor = new google.visualization.ChartEditor();
   google.visualization.events.addListener(editor, 'ok',
   function() { 
-  chartBubbleChartID151448ee767e = editor.getChartWrapper();  
-  chartBubbleChartID151448ee767e.draw(document.getElementById('BubbleChartID151448ee767e')); 
+  chartBubbleChartID221063345146 = editor.getChartWrapper();  
+  chartBubbleChartID221063345146.draw(document.getElementById('BubbleChartID221063345146')); 
   }); 
-  editor.openDialog(chartBubbleChartID151448ee767e);
+  editor.openDialog(chartBubbleChartID221063345146);
   }
     
  
@@ -1236,9 +1236,9 @@ if (newPackage)
   pkgs.push(chartid);
   
 // Add the drawChart function to the global list of callbacks
-callbacks.push(drawChartBubbleChartID151448ee767e);
+callbacks.push(drawChartBubbleChartID221063345146);
 })();
-function displayChartBubbleChartID151448ee767e() {
+function displayChartBubbleChartID221063345146() {
   var pkgs = window.__gvisPackages = window.__gvisPackages || [];
   var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
   window.clearTimeout(window.__gvisLoad);
@@ -1262,22 +1262,23 @@ callbacks.shift()();
 </script>
  
 <!-- jsChart -->  
-<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartBubbleChartID151448ee767e"></script>
+<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartBubbleChartID221063345146"></script>
  
 <!-- divChart -->
-<input type='button' onclick='openEditorBubbleChartID151448ee767e()' value='other chart'/>  
-<div id="BubbleChartID151448ee767e" 
+<input type='button' onclick='openEditorBubbleChartID221063345146()' value='other chart'/>  
+<div id="BubbleChartID221063345146" 
   style="width: 600; height: 900;">
 </div>
- <div><span>Data: bub &#8226; Chart ID: <a href="Chart_BubbleChartID151448ee767e.html">BubbleChartID151448ee767e</a> &#8226; <a href="https://github.com/mages/googleVis">googleVis-0.5.10</a></span><br /> 
+ <div><span>Data: bub &#8226; Chart ID: <a href="Chart_BubbleChartID221063345146.html">BubbleChartID221063345146</a> &#8226; <a href="https://github.com/mages/googleVis">googleVis-0.5.10</a></span><br /> 
 <!-- htmlFooter -->
 <span> 
   R version 3.2.4 (2016-03-10) 
   &#8226; <a href="https://developers.google.com/terms/">Google Terms of Use</a> &#8226; <a href="https://google-developers.appspot.com/chart/interactive/docs/gallery/bubblechart">Documentation and Data Policy</a>
 </span></div>
 <div>
-  <p>x축은 수익이고, y축은 기대수명이다. 위 표를 보면 수익이 높아질수록 기대수명이 높아진다.</p>
-  <p>버블의 크기는 국가별 인구를 나타내고, 버블의 색은 나라별로 색이 구별되어있다.</p>
+    <p>x축은 수익이고, y축은 기대수명이다.</p>
+    <P>버블의 색은 지역을 나타낸다. </P>
+    <P>버블의 크기는 인구를 나타낸다.</P>
 </div>
 </body>
 </html>
