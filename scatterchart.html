@@ -2,7 +2,7 @@
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<title>ScatterChartID15143d068bd</title>
+<title>ScatterChartID5fc13743a6</title>
 <meta http-equiv="content-type" content="text/html;charset=utf-8" />
 <style type="text/css">
 body {
@@ -18,14 +18,14 @@ body {
 </head>
 <body>
  <!-- ScatterChart generated in R 3.2.4 by googleVis 0.5.10 package -->
-<!-- Thu Jun 02 13:33:25 2016 -->
+<!-- Wed Jun 08 02:12:05 2016 -->
 
 
 <!-- jsHeader -->
 <script type="text/javascript">
  
 // jsData 
-function gvisDataScatterChartID15143d068bd () {
+function gvisDataScatterChartID5fc13743a6 () {
 var data = new google.visualization.DataTable();
 var datajson =
 [
@@ -357,40 +357,41 @@ return(data);
 }
  
 // jsDrawChart
-function drawChartScatterChartID15143d068bd() {
-var data = gvisDataScatterChartID15143d068bd();
+function drawChartScatterChartID5fc13743a6() {
+var data = gvisDataScatterChartID5fc13743a6();
 var options = {};
 options["allowHtml"] = true;
 options["title"] = "Correlation between Life Expectation and Income";
 options["legend"] = "none";
+options["trendlines"] = "linear";
 options["pointSize"] =      8;
+options["pointShape"] = "star";
 options["pointColors"] = "red";
 options["vAxis"] = {title:'lifeExp'};
 options["hAxis"] = {title:'Income'};
 options["width"] =    500;
 options["height"] =    400;
-options["pointShape"] = "star";
 
 
-    chartScatterChartID15143d068bd = new google.visualization.ChartWrapper({
+    chartScatterChartID5fc13743a6 = new google.visualization.ChartWrapper({
     dataTable: data,       
     chartType: 'ScatterChart',
-    containerId: 'ScatterChartID15143d068bd',
+    containerId: 'ScatterChartID5fc13743a6',
     options: options
     });
-    chartScatterChartID15143d068bd.draw();
+    chartScatterChartID5fc13743a6.draw();
     
 
 }
 
-  function openEditorScatterChartID15143d068bd() {
+  function openEditorScatterChartID5fc13743a6() {
   var editor = new google.visualization.ChartEditor();
   google.visualization.events.addListener(editor, 'ok',
   function() { 
-  chartScatterChartID15143d068bd = editor.getChartWrapper();  
-  chartScatterChartID15143d068bd.draw(document.getElementById('ScatterChartID15143d068bd')); 
+  chartScatterChartID5fc13743a6 = editor.getChartWrapper();  
+  chartScatterChartID5fc13743a6.draw(document.getElementById('ScatterChartID5fc13743a6')); 
   }); 
-  editor.openDialog(chartScatterChartID15143d068bd);
+  editor.openDialog(chartScatterChartID5fc13743a6);
   }
     
  
@@ -410,9 +411,9 @@ if (newPackage)
   pkgs.push(chartid);
   
 // Add the drawChart function to the global list of callbacks
-callbacks.push(drawChartScatterChartID15143d068bd);
+callbacks.push(drawChartScatterChartID5fc13743a6);
 })();
-function displayChartScatterChartID15143d068bd() {
+function displayChartScatterChartID5fc13743a6() {
   var pkgs = window.__gvisPackages = window.__gvisPackages || [];
   var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
   window.clearTimeout(window.__gvisLoad);
@@ -436,14 +437,14 @@ callbacks.shift()();
 </script>
  
 <!-- jsChart -->  
-<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartScatterChartID15143d068bd"></script>
+<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartScatterChartID5fc13743a6"></script>
  
 <!-- divChart -->
-<input type='button' onclick='openEditorScatterChartID15143d068bd()' value='other charts'/>  
-<div id="ScatterChartID15143d068bd" 
+<input type='button' onclick='openEditorScatterChartID5fc13743a6()' value='other charts'/>  
+<div id="ScatterChartID5fc13743a6" 
   style="width: 500; height: 400;">
 </div>
- <div><span>Data: scater &#8226; Chart ID: <a href="Chart_ScatterChartID15143d068bd.html">ScatterChartID15143d068bd</a> &#8226; <a href="https://github.com/mages/googleVis">googleVis-0.5.10</a></span><br /> 
+ <div><span>Data: scater &#8226; Chart ID: <a href="Chart_ScatterChartID5fc13743a6.html">ScatterChartID5fc13743a6</a> &#8226; <a href="https://github.com/mages/googleVis">googleVis-0.5.10</a></span><br /> 
 <!-- htmlFooter -->
 <span> 
   R version 3.2.4 (2016-03-10) 
